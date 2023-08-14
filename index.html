@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI calculation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=DM+Sans:opsz@9..40&family=Dancing+Script&family=Dosis:wght@700&family=Epilogue:wght@400;700;800&family=Inter:wght@400;700&family=JetBrains+Mono:wght@500;700&family=Montserrat:wght@600&family=Mulish:wght@400;600;700;900&family=Poppins&family=Roboto:wght@400;700&family=Source+Serif+4:wght@400;500;700&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="alert-error">Digite somente números</div>
+
+    <div class="container">
+      <main class="card">
+        <form action="">
+          <h1 class="title">Cálculo de IMC</h1>
+          <div class="input-wrapper">
+            <label for="weight">Peso (kg)</label>
+            <input id="weight" type="number" placeholder="60" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="height">Altura (cm)</label>
+            <input id="height" type="number" placeholder="165" />
+          </div>
+
+          <button type="submit">
+            Calcular IMC
+            <img
+              src="./images/arrow.svg"
+              alt="Desenho de uma seta apontando para direita"
+            />
+          </button>
+        </form>
+      </main>
+    </div>
+
+    <div class="modal-wrapper">
+      <div class="modal card">
+        <h2 class="title">
+          <button class="close">
+            <img
+              src="./images/close.svg"
+              alt="desenho de um X para fechar o popup"
+            />
+          </button>
+          <span>Seu IMC é de 28</span>
+        </h2>
+      </div>
+    </div>
+  </body>
+</html>
